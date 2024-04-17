@@ -5,7 +5,7 @@ try:
     port = 8000
     httpd = HTTPServer(("", port), SimpleHTTPRequestHandler)
     print(f"running on http://localhost:{port}/")
-    webbrowser.open("http://localhost:8000/", new=1)
+    webbrowser.open(f"http://localhost:{port}/", new=1)
     httpd.serve_forever()
 except KeyboardInterrupt:
     print("Server terminated")
